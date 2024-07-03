@@ -8,8 +8,8 @@ nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
 
 # Load the trained model and vectorizer
-model = joblib.load("C:\\Users\\Dell\\Downloads\\news-article-categories.pkl")
-vectorizer = joblib.load("C:\\Users\\Dell\\Downloads\\tfidf_vectorizer (1).pkl")
+model = joblib.load("news-article-categories.pkl")
+vectorizer = joblib.load("tfidf_vectorizer (1).pkl")
 
 # Text preprocessing function
 def preprocess(text):
